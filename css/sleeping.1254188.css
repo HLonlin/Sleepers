@@ -1,0 +1,223 @@
+*{margin:0;padding:0;list-style:none;box-sizing:border-box;-webkit-overflow-scrolling:touch;overflow-scrolling:touch;-webkit-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0)}
+.sleeping_content{display:none;overflow:hidden;position:relative}
+.sleeping_content .guide{position:absolute;top:0;z-index:10;width:100%;height:100%;background:rgba(0,0,0,0.5)}
+.sleeping_content .guide img{position:absolute;top:-100px}
+.sleeping_content .guide .guide_bg{width:639px;height:823px;background:url(../img/guide_bg.png) no-repeat;position:absolute;left:56px;top:77px}
+button{position:absolute;top:20px;width:150px;height:50px;font-size:30px}
+.back{left:160px}
+.right{left:320px}
+.left{left:480px}
+.remove_cloth{top:80px;left:160px}
+.change_cloth{top:80px}
+.select{position:absolute;bottom:0}
+.select .select_bar{width:750px;height:79px}
+.select .select_bar .scroll_bg{width:750px;height:70px;bottom:0;position:absolute;background:#282630}
+.select .select_bar .scroll_bar{position:absolute;bottom:0;width:750px;height:79px;overflow-x:scroll;font-size:0}
+.select .select_bar .scroll_bar ul{display:table;margin-top:9px;height:70px;width:804px;background:#282630}
+.select .select_bar .scroll_bar ul .black_icon{width:186px;height:15px;background:url(../img/icons/black_icon2.png) no-repeat;position:absolute;left:0;top:0;-webkit-transition:all linear .3s}
+.select .select_bar .scroll_bar li{z-index:1;width:103px;height:100%;float:left;background:#282630;position:relative;-webkit-transition:all linear .3s}
+.select .select_bar .scroll_bar li .icon{width:59px;height:59px;border-radius:10px;background:#413e4c url(../img/icons/icon1.png) center no-repeat;position:absolute;left:21px;top:6px;-webkit-transition:all linear .3s}
+.select .select_bar .scroll_bar li .text{width:45px;height:30px;background:url(../img/icons/text1.png) no-repeat;position:absolute;top:24px;left:102px;display:none}
+.select .select_bar .scroll_bar li:nth-child(2) .icon{background-image:url(../img/icons/icon2.png)}
+.select .select_bar .scroll_bar li:nth-child(2) .text{background-image:url(../img/icons/text2.png)}
+.select .select_bar .scroll_bar li:nth-child(3) .icon{background-image:url(../img/icons/icon3.png)}
+.select .select_bar .scroll_bar li:nth-child(3) .text{background-image:url(../img/icons/text3.png)}
+.select .select_bar .scroll_bar li:nth-child(4) .icon{background-image:url(../img/icons/icon4.png)}
+.select .select_bar .scroll_bar li:nth-child(4) .text{background-image:url(../img/icons/text4.png)}
+.select .select_bar .scroll_bar li:nth-child(5) .icon{background-image:url(../img/icons/icon5.png)}
+.select .select_bar .scroll_bar li:nth-child(5) .text{background-image:url(../img/icons/text5.png)}
+.select .select_bar .scroll_bar li:nth-child(6) .icon{background-image:url(../img/icons/icon6.png)}
+.select .select_bar .scroll_bar li:nth-child(6) .text{background-image:url(../img/icons/text6.png)}
+.select .select_bar .scroll_bar li:nth-child(7) .icon{background-image:url(../img/icons/icon7.png)}
+.select .select_bar .scroll_bar li:nth-child(7) .text{background-image:url(../img/icons/text7.png)}
+.select .select_bar .scroll_bar li::after{content:"";width:1px;height:50px;background:#373440;position:absolute;right:0;top:10px}
+.select .select_bar .scroll_bar .selected{width:186px;background:#0f0e14}
+.select .select_bar .scroll_bar .selected .icon{background-color:#ff216c;left:32px}
+.select .select_bar .scroll_bar .selected .text{display:block}
+.select .select_bar .scroll_bar .selected::after{width:0}
+.select .select_main{position:absolute;width:750px;height:191px;bottom:70px;-webkit-transition:all linear .3s}
+.select .select_main .arrow_bg{width:69px;height:43px;background:rgba(0,0,0,0.9);position:absolute;right:26px;border-top-left-radius:10px;border-top-right-radius:10px}
+.select .select_main .arrow_bg .arrow{width:30px;height:18px;background:url(../img/icons/arrow.png) no-repeat;position:absolute;top:17px;left:20px;-webkit-transform-origin:50% 6px;-webkit-transition:all linear .3s}
+.select .select_main .select_container{opacity:1;width:750px;height:148px;top:43px;position:absolute;background:rgba(0,0,0,0.55);border-top-left-radius:50px;-webkit-transition:all linear .3s}
+.select .select_main .save{display:none;width:74px;height:74px;background:url(../img/icons/save.png) no-repeat;position:absolute;top:-128px;right:25px}
+.select .select_main.close{height:43px}
+.select .select_main.close .arrow_bg .arrow{-webkit-transform:rotate(180deg)}
+.select .select_main.close .select_container{opacity:0}
+.select.iphoneX .select_main{bottom:120px}
+.select.iphoneX .select_bar{height:129px}
+.select.iphoneX .select_bar .scroll_bg{height:120px}
+.select.iphoneX .select_bar .scroll_bar{bottom:50px}
+.result_img{display:none;width:100%;height:100%;position:absolute;top:0;z-index:10}
+.result_img .saved_guide{display:none;width:750px;height:209px;position:absolute;background:url(../img/saved_guide2.jpg) no-repeat;bottom:0}
+.result_img .a_saved_guide{display:none;width:750px;height:209px;position:absolute;background:url(../img/a_saved_guide.jpg) no-repeat;bottom:0}
+.saved_img{display:none;width:100%;height:100%;position:absolute;top:0;opacity:0;z-index:1000}
+.select_box{width:100%;height:100%}
+.select_box .select_item{position:absolute;top:0;width:100%;height:100%;overflow-x:scroll}
+.select_box .people .select_guide{width:254px;height:48px;background:url(../img/select_guide.png) top right no-repeat;position:absolute;top:50px;left:370px;z-index:10}
+.select_box .people .select_guide .guide_tri{width:32px;height:40px;background:url(../img/select_guide_tri.png) no-repeat;position:absolute;top:3px;left:0;-webkit-animation-origin:50% 50%;-webkit-animation:guide_tri 1s linear infinite}
+.select_box .people .select_people{width:430px;height:100%;margin-left:40px}
+.select_box .people .select_people li{width:130px;height:100%;float:left;position:relative}
+.select_box .people .select_people li .li_bg{position:absolute;bottom:45px;width:100%;height:93px;background:url(../img/select/people/man.png) center bottom no-repeat;-webkit-transition:all linear .1s}
+.select_box .people .select_people li .li_text{font-size:20px;color:#d4d4d4;line-height:20px;text-align:center;width:50px;position:absolute;bottom:9px;left:37.5px;padding:0 5px 5px;-webkit-transition:all linear .1s}
+.select_box .people .select_people li:nth-child(2) .li_bg{background-image:url(../img/select/people/woman.png)}
+.select_box .people .select_people li.active .li_bg{bottom:55px}
+.select_box .people .select_people li.active .li_text{border-bottom:4px solid #ff216c}
+.select_box .facingTo{display:none}
+.select_box .man_facingTo,.select_box .woman_facingTo{width:700px;height:100%;margin-left:40px}
+.select_box .man_facingTo li,.select_box .woman_facingTo li{width:130px;height:100%;float:left;position:relative}
+.select_box .man_facingTo li .li_bg,.select_box .woman_facingTo li .li_bg{width:100%;height:100%;background:url(../img/select/facingto/man.png) center 10px no-repeat;-webkit-transition:all linear .1s}
+.select_box .man_facingTo li .li_text,.select_box .woman_facingTo li .li_text{font-size:20px;color:#d4d4d4;line-height:20px;position:absolute;bottom:9px;left:37.5px;padding:0 5px 5px;-webkit-transition:all linear .1s}
+.select_box .man_facingTo li.active .li_bg,.select_box .woman_facingTo li.active .li_bg{background-position:center 3px}
+.select_box .man_facingTo li.active .li_text,.select_box .woman_facingTo li.active .li_text{border-bottom:4px solid #ff216c}
+.select_box .man_facingTo{display:none}
+.select_box .man_facingTo li:nth-child(2) .li_bg{background-image:url(../img/select/facingto/man_left.png)}
+.select_box .man_facingTo li:nth-child(3) .li_bg{background-image:url(../img/select/facingto/man_right.png)}
+.select_box .man_facingTo li:nth-child(4) .li_bg{background-image:url(../img/select/facingto/man_back.png)}
+.select_box .woman_facingTo{display:none}
+.select_box .woman_facingTo li:nth-child(1) .li_bg{background-image:url(../img/select/facingto/woman.png)}
+.select_box .woman_facingTo li:nth-child(2) .li_bg{background-image:url(../img/select/facingto/woman_left.png)}
+.select_box .woman_facingTo li:nth-child(3) .li_bg{background-image:url(../img/select/facingto/woman_right.png)}
+.select_box .woman_facingTo li:nth-child(4) .li_bg{background-image:url(../img/select/facingto/woman_back.png)}
+.select_box .cloth{display:none}
+.select_box .man_cloth,.select_box .woman_cloth{width:1340px;height:100%;margin-left:40px;position:absolute;top:0}
+.select_box .man_cloth li,.select_box .woman_cloth li{width:130px;height:100%;float:left;position:relative}
+.select_box .man_cloth li .li_bg,.select_box .woman_cloth li .li_bg{width:100%;height:100%;background:url(../img/select/cloth/man_0.png) center 10px no-repeat;-webkit-transition:all linear .1s}
+.select_box .man_cloth li .li_text,.select_box .woman_cloth li .li_text{width:50px;line-height:20px;position:absolute;bottom:9px;left:37.5px;padding:0 5px 5px;-webkit-transition:all linear .1s}
+.select_box .man_cloth li.active .li_bg,.select_box .woman_cloth li.active .li_bg{background-position:center 3px}
+.select_box .man_cloth li.active .li_text,.select_box .woman_cloth li.active .li_text{border-bottom:4px solid #ff216c}
+.select_box .man_cloth{display:none}
+.select_box .man_cloth li:nth-child(2) .li_bg{background-image:url(../img/select/cloth/man_1.png)}
+.select_box .man_cloth li:nth-child(3) .li_bg{background-image:url(../img/select/cloth/man_2.png)}
+.select_box .man_cloth li:nth-child(4) .li_bg{background-image:url(../img/select/cloth/man_3.png)}
+.select_box .man_cloth li:nth-child(5) .li_bg{background-image:url(../img/select/cloth/man_4.png)}
+.select_box .man_cloth li:nth-child(6) .li_bg{background-image:url(../img/select/cloth/man_5.png)}
+.select_box .man_cloth li:nth-child(7) .li_bg{background-image:url(../img/select/cloth/man_6.png)}
+.select_box .man_cloth li:nth-child(8) .li_bg{background-image:url(../img/select/cloth/man_7.png)}
+.select_box .man_cloth li:nth-child(9) .li_bg{background-image:url(../img/select/cloth/man_8.png)}
+.select_box .man_cloth li:nth-child(10) .li_bg{background-image:url(../img/select/cloth/man_9.png)}
+.select_box .woman_cloth{display:none}
+.select_box .woman_cloth li:nth-child(1) .li_bg{background-image:url(../img/select/cloth/woman_0.png)}
+.select_box .woman_cloth li:nth-child(2) .li_bg{background-image:url(../img/select/cloth/woman_1.png)}
+.select_box .woman_cloth li:nth-child(3) .li_bg{background-image:url(../img/select/cloth/woman_2.png)}
+.select_box .woman_cloth li:nth-child(4) .li_bg{background-image:url(../img/select/cloth/woman_3.png)}
+.select_box .woman_cloth li:nth-child(5) .li_bg{background-image:url(../img/select/cloth/woman_4.png)}
+.select_box .woman_cloth li:nth-child(6) .li_bg{background-image:url(../img/select/cloth/woman_5.png)}
+.select_box .woman_cloth li:nth-child(7) .li_bg{background-image:url(../img/select/cloth/woman_6.png)}
+.select_box .woman_cloth li:nth-child(8) .li_bg{background-image:url(../img/select/cloth/woman_7.png)}
+.select_box .woman_cloth li:nth-child(9) .li_bg{background-image:url(../img/select/cloth/woman_8.png)}
+.select_box .woman_cloth li:nth-child(10) .li_bg{background-image:url(../img/select/cloth/woman_9.png)}
+.select_box .face{display:none}
+.select_box .face .man_face{display:none;width:950px;height:100%;margin-left:40px}
+.select_box .face .man_face li{width:130px;height:100%;float:left;position:relative}
+.select_box .face .man_face li .li_bg{width:100%;height:100%;background:url(../img/select/face/face1.png) 32.5px 35px no-repeat;-webkit-transition:all linear .1s}
+.select_box .face .man_face li .li_text{width:50px;line-height:20px;position:absolute;bottom:9px;left:37.5px;padding:0 5px 5px;-webkit-transition:all linear .1s}
+.select_box .face .man_face li:nth-child(2) .li_bg{background-image:url(../img/select/face/face2.png)}
+.select_box .face .man_face li:nth-child(3) .li_bg{background-image:url(../img/select/face/face3.png)}
+.select_box .face .man_face li:nth-child(4) .li_bg{background-image:url(../img/select/face/face4.png)}
+.select_box .face .man_face li:nth-child(5) .li_bg{background-image:url(../img/select/face/face5.png)}
+.select_box .face .man_face li:nth-child(6) .li_bg{background-image:url(../img/select/face/face6.png)}
+.select_box .face .man_face li:nth-child(7) .li_bg{background-image:url(../img/select/face/face7.png)}
+.select_box .face .man_face li.active .li_bg{background-position:32.5px 25px}
+.select_box .face .man_face li.active .li_text{border-bottom:4px solid #ff216c}
+.select_box .hair{display:none}
+.select_box .hair .man_hair,.select_box .hair .woman_hair{width:1860px;height:100%;margin-left:40px}
+.select_box .hair .man_hair li,.select_box .hair .woman_hair li{width:130px;height:100%;float:left;position:relative}
+.select_box .hair .man_hair li .li_bg,.select_box .hair .woman_hair li .li_bg{position:absolute;bottom:35px;width:100%;height:103px;background:url(../img/select/hair/man/hair1.png) center bottom no-repeat;-webkit-transition:all linear .1s}
+.select_box .hair .man_hair li .li_text,.select_box .hair .woman_hair li .li_text{width:50px;line-height:20px;position:absolute;bottom:9px;left:37.5px;padding:0 5px 5px;-webkit-transition:all linear .1s}
+.select_box .hair .man_hair li.active .li_bg,.select_box .hair .woman_hair li.active .li_bg{bottom:45px}
+.select_box .hair .man_hair li.active .li_text,.select_box .hair .woman_hair li.active .li_text{border-bottom:4px solid #ff216c}
+.select_box .hair .man_hair{display:none}
+.select_box .hair .man_hair li:nth-child(2) .li_bg{background-image:url(../img/select/hair/man/hair2.png)}
+.select_box .hair .man_hair li:nth-child(3) .li_bg{background-image:url(../img/select/hair/man/hair3.png)}
+.select_box .hair .man_hair li:nth-child(4) .li_bg{background-image:url(../img/select/hair/man/hair4.png)}
+.select_box .hair .man_hair li:nth-child(5) .li_bg{background-image:url(../img/select/hair/man/hair5.png)}
+.select_box .hair .man_hair li:nth-child(6) .li_bg{background-image:url(../img/select/hair/man/hair6.png)}
+.select_box .hair .man_hair li:nth-child(7) .li_bg{background-image:url(../img/select/hair/man/hair7.png)}
+.select_box .hair .man_hair li:nth-child(8) .li_bg{background-image:url(../img/select/hair/man/hair8.png)}
+.select_box .hair .man_hair li:nth-child(9) .li_bg{background-image:url(../img/select/hair/man/hair9.png)}
+.select_box .hair .man_hair li:nth-child(10) .li_bg{background-image:url(../img/select/hair/man/hair10.png)}
+.select_box .hair .man_hair li:nth-child(11) .li_bg{background-image:url(../img/select/hair/man/hair11.png)}
+.select_box .hair .man_hair li:nth-child(12) .li_bg{background-image:url(../img/select/hair/man/hair12.png)}
+.select_box .hair .man_hair li:nth-child(13) .li_bg{background-image:url(../img/select/hair/man/hair13.png)}
+.select_box .hair .man_hair li:nth-child(14) .li_bg{background-image:url(../img/select/hair/man/hair14.png)}
+.select_box .hair .woman_hair{display:none}
+.select_box .hair .woman_hair li:nth-child(1) .li_bg{background-image:url(../img/select/hair/woman/hair1.png)}
+.select_box .hair .woman_hair li:nth-child(2) .li_bg{background-image:url(../img/select/hair/woman/hair2.png)}
+.select_box .hair .woman_hair li:nth-child(3) .li_bg{bottom:29px;background-image:url(../img/select/hair/woman/hair3.png)}
+.select_box .hair .woman_hair li:nth-child(4) .li_bg{background-image:url(../img/select/hair/woman/hair4.png)}
+.select_box .hair .woman_hair li:nth-child(5) .li_bg{background-image:url(../img/select/hair/woman/hair5.png)}
+.select_box .hair .woman_hair li:nth-child(6) .li_bg{background-image:url(../img/select/hair/woman/hair6.png)}
+.select_box .hair .woman_hair li:nth-child(7) .li_bg{bottom:17px;background-image:url(../img/select/hair/woman/hair7.png)}
+.select_box .hair .woman_hair li:nth-child(8) .li_bg{background-image:url(../img/select/hair/woman/hair8.png)}
+.select_box .hair .woman_hair li:nth-child(9) .li_bg{background-image:url(../img/select/hair/woman/hair9.png)}
+.select_box .hair .woman_hair li:nth-child(10) .li_bg{background-image:url(../img/select/hair/woman/hair10.png)}
+.select_box .hair .woman_hair li:nth-child(11) .li_bg{background-image:url(../img/select/hair/woman/hair11.png)}
+.select_box .hair .woman_hair li:nth-child(12) .li_bg{background-image:url(../img/select/hair/woman/hair12.png)}
+.select_box .hair .woman_hair li:nth-child(13) .li_bg{background-image:url(../img/select/hair/woman/hair13.png)}
+.select_box .hair .woman_hair li:nth-child(14) .li_bg{background-image:url(../img/select/hair/woman/hair14.png)}
+.select_box .hair .woman_hair li:nth-child(3).active .li_bg{bottom:39px}
+.select_box .hair .woman_hair li:nth-child(7).active .li_bg{bottom:27px}
+.select_box .room{display:none}
+.select_box .room ul{width:690px;height:100%;margin-left:40px}
+.select_box .room ul li{width:130px;height:100%;float:left;position:relative}
+.select_box .room ul li .li_bg{position:absolute;width:100%;height:100%;background:url(../img/select/room/room1.png) center 34px no-repeat;-webkit-transition:all linear .1s}
+.select_box .room ul li .li_text{width:50px;line-height:20px;position:absolute;bottom:9px;left:37.5px;padding:0 5px 5px;-webkit-transition:all linear .1s}
+.select_box .room ul li.active .li_bg{background-position:center 24px}
+.select_box .room ul li.active .li_text{border-bottom:4px solid #ff216c}
+.select_box .room ul li:nth-child(2) .li_bg{background-image:url(../img/select/room/room2.png)}
+.select_box .room ul li:nth-child(3) .li_bg{background-image:url(../img/select/room/room3.png)}
+.select_box .room ul li:nth-child(4) .li_bg{background-image:url(../img/select/room/room4.png)}
+.select_box .room ul li:nth-child(5) .li_bg{background-image:url(../img/select/room/room5.png)}
+.select_box .others{display:none}
+.select_box .others ul{width:3680px;height:100%;margin-left:40px}
+.select_box .others ul li{width:130px;height:100%;float:left;position:relative}
+.select_box .others ul li .li_bg{position:absolute;width:100%;bottom:0;height:138px;background:url(../img/select/others/0-0.png) center center no-repeat;-webkit-transition:all linear .1s}
+.select_box .others ul li .li_text{width:50px;position:absolute;bottom:9px;left:37.5px;padding:0 5px 5px;-webkit-transition:all linear .1s}
+.select_box .others ul li.active .li_bg{bottom:10px}
+.select_box .others ul li.active .li_text{border-bottom:4px solid #ff216c}
+.select_box .others ul li:nth-child(2) .li_bg{background-image:url(../img/select/others/0-1.png)}
+.select_box .others ul li:nth-child(3) .li_bg{background-image:url(../img/select/others/0-2.png)}
+.select_box .others ul li:nth-child(4) .li_bg{background-image:url(../img/select/others/1-0.png)}
+.select_box .others ul li:nth-child(5) .li_bg{background-image:url(../img/select/others/1-1.png)}
+.select_box .others ul li:nth-child(6) .li_bg{background-image:url(../img/select/others/1-4.png)}
+.select_box .others ul li:nth-child(7) .li_bg{background-image:url(../img/select/others/1-3.png)}
+.select_box .others ul li:nth-child(8) .li_bg{background-image:url(../img/select/others/2-0.png)}
+.select_box .others ul li:nth-child(9) .li_bg{background-image:url(../img/select/others/2-1.png)}
+.select_box .others ul li:nth-child(10) .li_bg{background-image:url(../img/select/others/2-2.png)}
+.select_box .others ul li:nth-child(11) .li_bg{background-image:url(../img/select/others/2-3.png)}
+.select_box .others ul li:nth-child(12) .li_bg{background-image:url(../img/select/others/3-0.png)}
+.select_box .others ul li:nth-child(13) .li_bg{background-image:url(../img/select/others/3-1.png)}
+.select_box .others ul li:nth-child(14) .li_bg{background-image:url(../img/select/others/3-2.png)}
+.select_box .others ul li:nth-child(15) .li_bg{background-image:url(../img/select/others/3-3.png)}
+.select_box .others ul li:nth-child(16) .li_bg{background-image:url(../img/select/others/3-4.png)}
+.select_box .others ul li:nth-child(17) .li_bg{background-image:url(../img/select/others/3-5.png)}
+.select_box .others ul li:nth-child(18) .li_bg{background-image:url(../img/select/others/3-6.png)}
+.select_box .others ul li:nth-child(19) .li_bg{background-image:url(../img/select/others/3-7.png)}
+.select_box .others ul li:nth-child(20) .li_bg{background-image:url(../img/select/others/4-0.png)}
+.select_box .others ul li:nth-child(21) .li_bg{background-image:url(../img/select/others/4-1.png)}
+.select_box .others ul li:nth-child(22) .li_bg{background-image:url(../img/select/others/4-2.png)}
+.select_box .others ul li:nth-child(23) .li_bg{background-image:url(../img/select/others/5-0.png)}
+.select_box .others ul li:nth-child(24) .li_bg{background-image:url(../img/select/others/6-0.png)}
+.select_box .others ul li:nth-child(25) .li_bg{background-image:url(../img/select/others/6-1.png)}
+.select_box .others ul li:nth-child(26) .li_bg{background-image:url(../img/select/others/6-2.png)}
+.select_box .others ul li:nth-child(27) .li_bg{background-image:url(../img/select/others/6-3.png)}
+.select_box .others ul li:nth-child(28) .li_bg{background-image:url(../img/select/others/6-4.png)}
+.first_page{width:100%;height:100%;background:#fff;position:absolute;top:0;z-index:100}
+.first_page .top{position:absolute;top:34px;left:75px;width:643px;height:410px;background:url(../img/top.png) no-repeat}
+.first_page .pose{width:242px;height:368px;position:absolute;left:251px;top:518px;background:url(../img/sleep.png) no-repeat;background-position:-5px -5px;-webkit-animation:pose 2s infinite;animation:pose 2s infinite;-webkit-animation-timing-function:step-start;animation-timing-function:step-start}
+.first_page .start{width:171px;height:166px;background:url(../img/start.png) no-repeat;position:absolute;left:298px;bottom:85px}
+@keyframes pose{from{background-position:-5px -5px}
+16.67%{background-position:-257px -5px}
+33.34%{background-position:-509px -5px}
+50%{background-position:-5px -383px}
+66.67%{background-position:-257px -383px}
+83.34%{background-position:-509px -383px}
+to{background-position:-5px -5px}
+}
+@-webkit-keyframes icon_bg{from{-webkit-transform:scale(0.9,0.9)}
+to{-webkit-transform:scale(1,1)}
+}
+@-webkit-keyframes guide_tri{from{-webkit-transform:translate3d(86px,0,0)}
+to,80%{-webkit-transform:translate3d(0,0,0)}
+}
+
